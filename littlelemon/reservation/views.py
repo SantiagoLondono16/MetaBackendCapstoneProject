@@ -7,6 +7,10 @@ from .serializers import MenuSerializer, ReservationSerializer, UserSerializer
 
 
 # Create your views here.
+
+def IndexView(request):
+    return render(request, 'index.html')
+
 class MenuView(ListCreateAPIView):
     queryset = Menu.objects.all()
     serializer_class = MenuSerializer

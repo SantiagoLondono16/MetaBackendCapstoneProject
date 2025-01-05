@@ -15,4 +15,5 @@ urlpatterns = [
     path('bookings/', include(router.urls)),
     path('users/', include(router2.urls)),
     path('api-token-auth/', obtain_auth_token),
+    path('index/', views.IndexView),
 ]
